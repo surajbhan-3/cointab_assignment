@@ -6,7 +6,14 @@ const {userRoutes}= require("./routes/UserRoutes")
 const {postRoutes} = require("./routes/PostRoutes")
 
 const app = express()
-app.use(cors())
+app.use(
+    cors({
+      origin:
+        "https://cointab-assignment-jet.vercel.app/",
+      methods: ["GET", "POST"],
+      allowedHeaders: ["Content-Type"],
+    })
+  );
 app.use(express.json())
 
 app.get("/", (req,res)=>{
