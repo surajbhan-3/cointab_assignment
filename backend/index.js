@@ -6,7 +6,7 @@ const {userRoutes}= require("./routes/UserRoutes")
 const {postRoutes} = require("./routes/PostRoutes")
 
 const corsOptions = {
-    origin: ['http://localhost:3000', 'https://cointab-assignment-jet.vercel.app/'], // Allowed origins
+    origin: ['http://localhost:3000', 'https://cointab-assignment-jet.vercel.app'], // Allowed origins
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',               // Allowed HTTP methods
     allowedHeaders: 'Content-Type,Authorization',            // Allowed headers in preflight requests
     exposedHeaders: ['Content-Length', 'Authorization'],    // Headers to expose to the browser
