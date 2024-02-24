@@ -22,7 +22,7 @@ useEffect(()=>{
 
 useEffect(()=>{
   const checkIsuserPresent = async()=>{
-     const response = await axios.get(`http://localhost:4500/api/post/verifyUserId/${localStorage.getItem("cointab-userId")}`)
+     const response = await axios.get(`https://tiny-ruby-angelfish-belt.cyclic.app/api/post/verifyUserId/${localStorage.getItem("cointab-userId")}`)
      console.log(response)
     if(response.data.exists===true){
         setIsUserPresent(true)
@@ -36,7 +36,7 @@ useEffect(()=>{
 
 
 const handleBulkAdd = async()=>{
-    const response = await axios.post(`http://localhost:4500/api/post/addPostInBulk`,{
+    const response = await axios.post(`https://tiny-ruby-angelfish-belt.cyclic.app/api/post/addPostInBulk`,{
                      data
                      })
     console.log(response.data)

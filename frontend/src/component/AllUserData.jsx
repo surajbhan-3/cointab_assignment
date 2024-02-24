@@ -9,7 +9,7 @@ const navigate = useNavigate()
  
      const checkUserId = async ()=>{
 
-       const response = await axios.get(`http://localhost:4500/api/user/${id}`)
+       const response = await axios.get(`https://tiny-ruby-angelfish-belt.cyclic.app/api/user/${id}`)
        if(response.data.message==="No User Data"){
         setIsUserPresent(false)
        }else{
@@ -24,7 +24,7 @@ const navigate = useNavigate()
 
  const handleAddData = async()=>{
       
-       const response = await axios.post("http://localhost:4500/api/user/addNewUser",{
+       const response = await axios.post("https://tiny-ruby-angelfish-belt.cyclic.app/api/user/addNewUser",{
 
           name:name,
           email:email,
