@@ -1,0 +1,68 @@
+.h-main-div{
+
+    /* background-color: red; */
+    width: 50%;
+    margin: auto;
+    text-align: center;
+   
+
+
+}
+.h-main-div span{
+    color: #00ca9f;
+}
+.h-main-div button{
+
+     font-size: 16px;
+     padding: 10px 30px;
+     border-radius: 6px;
+     outline: none;
+     border:1px solid grey;
+     background-color: #455dee;
+     color: white;
+     cursor: pointer;
+
+}
+.h-main-div button:hover{
+    transform: scale(1.1);
+
+}
+
+.table-div{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid black;
+    font-size: 18px;
+
+
+}
+.table-div table{
+    border-collapse: collapse;
+}
+
+.table-div table thead{
+    border: 1px solid grey;
+    text-align: left;
+    background-color:  #727cf5;
+
+}
+.table-div table thead th{
+    border: 1px solid black;
+    padding: 10px;
+    padding-left: 5px;
+}
+.table-div table tr{
+    border: 1px solid grey;
+    margin: 10px;
+    
+}
+.table-div table tbody{
+    margin: 10px;
+}
+.table-div table tbody td{
+    /* background-color:grey; */
+    padding: 10px;
+    border: 1px solid grey;
+
+}

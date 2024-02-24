@@ -1,0 +1,56 @@
+
+.p-main-div{
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    text-align: right;
+    
+}
+
+.p-main-div button{
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 6px;
+    outline: none;
+    border:1px solid grey;
+    background-color: #455dee;
+    color: white;
+    cursor: pointer;
+
+}
+.post-div-table{
+    width: 80%;
+    margin: auto;
+}
+.post-div-table table{
+    border-collapse: collapse;
+}
+
+.post-div-table table thead{
+    border: 1px solid grey;
+    text-align: left;
+    background-color:  #727cf5;
+
+}
+.post-div-table table thead th{
+    border: 1px solid black;
+    padding: 10px;
+    padding-left: 5px;
+}
+.post-div-table table tr{
+    border: 1px solid grey;
+    margin: 10px;
+    
+}
+.post-div-table table tbody{
+    margin: 10px;
+}
+.post-div-table table tbody td{
+    /* background-color:grey; */
+    padding: 10px;
+    border: 1px solid grey;
+
+}
