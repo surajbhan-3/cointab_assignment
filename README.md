@@ -18,7 +18,7 @@ Upon opening the website, users are welcomed with a prominent heading stating "C
    - Company
 3. Alongside the displayed user information, two buttons, "Open" and "Add," are provided.
 4. Initially, only the “Add” button is visible.
-5. Clicking the "Add" button stores all the user information retrieved from the API in the MySQL database.
+5. Clicking the "Add" button stores all the user information retrieved from the API in the Mongodb database.
 6. If the database contains the user's entry, the "Open" button is shown, and the “Add” button is hidden.
 7. Clicking the "Open" button opens a new Post page.
 
@@ -35,7 +35,7 @@ The Post Page fetches data from the API ('https://jsonplaceholder.typicode.com/p
    - Company (associated with the particular userId)
 2. Two buttons, "Bulk Add" and "Download In Excel," are placed at the top of the page.
 3. Initially, only the "Bulk Add" button is visible.
-4. Clicking the "Bulk Add" button stores all the posts present on that page into the MySQL database.
+4. Clicking the "Bulk Add" button stores all the posts present on that page into the Mongodb database.
 5. If the database contains post entries for the specific userId, the "Bulk Add" button is hidden, and the "Download in Excel" button is shown.
 6. Clicking the "Download in Excel" button initiates the download of an Excel file containing all the post information for that particular user.
 
