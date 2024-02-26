@@ -39,7 +39,7 @@ const handleBulkAdd = async()=>{
     const response = await axios.post(`https://tiny-ruby-angelfish-belt.cyclic.app/api/post/addPostInBulk`,{
                      data
                      })
-       
+       alert("Bulk Data has been Added")
                      setIsUserPresent(true)
                      
 

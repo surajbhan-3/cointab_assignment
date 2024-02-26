@@ -5,7 +5,7 @@
     margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: right;
     
 }
@@ -19,6 +19,7 @@
     background-color: #455dee;
     color: white;
     cursor: pointer;
+    margin-right: 70px;
 
 }
 .post-div-table{
