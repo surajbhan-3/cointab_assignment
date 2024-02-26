@@ -74,3 +74,130 @@ The Post Page fetches data from the API ('https://jsonplaceholder.typicode.com/p
   - Cyclic.sh.
 
 This project showcases a well-structured and interactive web application that fulfills the specified business requirements while utilizing a stack of modern technologies.
+
+
+## API Documentation
+
+### Welcome
+- **Route**: `/`
+- **Method**: GET
+- **Description**: Welcomes users to the backend.
+- **Response**:
+  - Success: 200 OK
+    ```
+    "Welcome to backend"
+    ```
+
+### User Routes
+
+#### Get All User Data
+- **Route**: `/api/user/userdata`
+- **Method**: GET
+- **Description**: Retrieves all user data from the database.
+- **Response**:
+  - Success: 200 OK
+    ```
+    {
+      "userIDs": ["userId1", "userId2", ...]
+    }
+    ```
+  - Error: 500 Internal Server Error
+
+#### Add New User
+- **Route**: `/api/user/addNewUser`
+- **Method**: POST
+- **Description**: Adds a new user to the database.
+- **Request Body**:
+  ```
+  {
+    "name": "User Name",
+    "email": "user@example.com",
+    "phone": "1234567890",
+    "website": "https://example.com",
+    "city": "City Name",
+    "company": "Company Name",
+    "userId": "uniqueUserId"
+  }
+  ```
+- **Response**:
+  - Success: 200 OK
+    ```
+    {
+      "message": "The user Data is added successfully"
+    }
+    ```
+  - Error: 500 Internal Server Error
+
+#### Get User Data by ID
+- **Route**: `/api/user/:id`
+- **Method**: GET
+- **Description**: Retrieves user data by user ID.
+- **Parameters**:
+  - `id`: User ID
+- **Response**:
+  - Success: 200 OK
+    ```
+    {
+      "data": {
+        // User Data Object
+      }
+    }
+    ```
+  - Error: 500 Internal Server Error
+
+### Post Routes
+
+#### Add Bulk Posts
+- **Route**: `/api/post/addPostInBulk`
+- **Method**: POST
+- **Description**: Adds bulk posts to the database.
+- **Request Body**:
+  ```
+  {
+    "data": [
+      {
+        // Post Data Object
+      },
+      {
+        // Post Data Object
+      },
+      ...
+    ]
+  }
+  ```
+- **Response**:
+  - Success: 200 OK
+    ```
+    {
+      "message": "Bulk posts added successfully",
+      "bulkPostAdded": [
+        // Array of added post objects
+      ]
+    }
+    ```
+  - Error: 500 Internal Server Error
+
+#### Verify User ID
+- **Route**: `/api/post/verifyUserId/:userId`
+- **Method**: GET
+- **Description**: Verifies if a user ID exists in the database.
+- **Parameters**:
+  - `userId`: User ID to verify
+- **Response**:
+  - Success: 200 OK
+    ```
+    {
+      "exists": true,
+      "message": "userId already exists in the database"
+    }
+    ```
+    or
+    ```
+    {
+      "exists": false,
+      "message": "userId does not exist in the database"
+    }
+    ```
+  - Error: 500 Internal Server Error
+
+
